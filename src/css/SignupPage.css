@@ -1,0 +1,78 @@
+.SignupPage {
+  height: 100vh;
+  position: relative;
+}
+.SignupPage .signup-credentials {
+  position: absolute;
+  border: 3px solid #537d7d;
+  padding: 0.9rem;
+  color: #365252;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.SignupPage .signup-credentials div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.SignupPage .signup-credentials > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+  width: 100%;
+}
+.SignupPage .signup-credentials > div > div {
+  position: relative;
+  overflow: hidden;
+}
+.SignupPage .signup-credentials > div > div input {
+  padding: 0.1rem;
+  outline-style: none;
+  border: none;
+  border-bottom: 3px solid rgba(128, 128, 128, 0.5);
+  color: #365252;
+  font-size: 1rem;
+}
+.SignupPage .signup-credentials > div > div input:focus + div {
+  transform: translateX(0%);
+}
+.SignupPage .signup-credentials > div > div > div {
+  position: absolute;
+  height: 3px;
+  background: #537d7d;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  transform: translateX(-110%);
+  transition: 0.2s;
+}
+.SignupPage .signup-credentials > button {
+  padding: 0.2rem;
+  outline-style: none;
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.SignupPage .signup-credentials > button:hover {
+  padding: 0.2rem 1rem;
+}
+
+#create-account--loading {
+  background: grey;
+}
+
+#create-account {
+  background: #537d7d;
+}
+
+/*# sourceMappingURL=SignupPage.css.map */

@@ -1,0 +1,62 @@
+@import "assets";
+.WalletHistory {
+  margin-left: calc(70px + 5rem);
+  margin-right: 5rem;
+  @include CenterAlign(column, flex-start, space-evenly);
+  .greet {
+    font-size: 2.5rem;
+    color: $text-color;
+  }
+  .purchase-history {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: $text-color;
+  }
+  .History-display {
+    width: 100%;
+    margin-top: 0.7rem;
+    & > div {
+      margin: 0.2rem;
+      .coin-wallet-display {
+        width: 100%;
+        z-index: -1;
+        color: $wallet-icon-color;
+        @include CenterAlign(row, center, space-between);
+        background: $primary-color;
+        border-radius: 999px;
+        & > div {
+          padding: 0.5rem 0rem 0.5rem 1rem;
+        }
+        & > button {
+          background: $primary-color;
+          outline-style: none;
+          border: none;
+          cursor: pointer;
+          padding: 0.5rem 1rem 0.5rem 0rem;
+          border-radius: 999px;
+          img {
+            transition: 0.2s;
+          }
+        }
+      }
+      .coin-wallet-details {
+        overflow: hidden;
+        height: 0px;
+        @include CenterAlign(column, flex-start, space-evenly);
+        color: $text-color;
+        transition: height 0.3s;
+        border-radius: 0.5rem;
+        padding-left: 1rem;
+        z-index: 100;
+        background: $wallet-icon-color;
+        & > div {
+          padding: 0.4rem 0rem;
+        }
+      }
+    }
+  }
+}
+#expanded {
+  height: 12rem;
+  transition: height 0.3s;
+}

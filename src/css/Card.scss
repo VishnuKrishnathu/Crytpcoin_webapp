@@ -1,0 +1,19 @@
+@import "assets";
+#Card {
+  border-radius: 10px;
+  background-image: linear-gradient(#e6e6e6, $primary-color);
+  @include CenterAlign(column, center, space-between);
+  img {
+    width: auto;
+    height: 10rem;
+    margin-top: 1.3rem;
+  }
+  .coin_props {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding-bottom: 2rem;
+    div {
+      padding: 0.2rem 0.5rem;
+    }
+  }
+}

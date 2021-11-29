@@ -1,0 +1,73 @@
+.WalletHistory {
+  margin-left: calc(70px + 5rem);
+  margin-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.WalletHistory .greet {
+  font-size: 2.5rem;
+  color: #365252;
+}
+.WalletHistory .purchase-history {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #365252;
+}
+.WalletHistory .History-display {
+  width: 100%;
+  margin-top: 0.7rem;
+}
+.WalletHistory .History-display > div {
+  margin: 0.2rem;
+}
+.WalletHistory .History-display > div .coin-wallet-display {
+  width: 100%;
+  z-index: -1;
+  color: #e2e9e9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #537d7d;
+  border-radius: 999px;
+}
+.WalletHistory .History-display > div .coin-wallet-display > div {
+  padding: 0.5rem 0rem 0.5rem 1rem;
+}
+.WalletHistory .History-display > div .coin-wallet-display > button {
+  background: #537d7d;
+  outline-style: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem 0.5rem 0rem;
+  border-radius: 999px;
+}
+.WalletHistory .History-display > div .coin-wallet-display > button img {
+  transition: 0.2s;
+}
+.WalletHistory .History-display > div .coin-wallet-details {
+  overflow: hidden;
+  height: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  color: #365252;
+  transition: height 0.3s;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  z-index: 100;
+  background: #e2e9e9;
+}
+.WalletHistory .History-display > div .coin-wallet-details > div {
+  padding: 0.4rem 0rem;
+}
+
+#expanded {
+  height: 12rem;
+  transition: height 0.3s;
+}
+
+/*# sourceMappingURL=WalletHistory.css.map */

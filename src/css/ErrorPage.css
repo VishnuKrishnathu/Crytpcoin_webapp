@@ -1,0 +1,16 @@
+.ErrorPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #365252;
+  height: 50vh;
+}
+.ErrorPage .error-404 {
+  font-size: 10rem;
+}
+.ErrorPage .display-error {
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=ErrorPage.css.map */

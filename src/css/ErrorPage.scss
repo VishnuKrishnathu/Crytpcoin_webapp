@@ -1,0 +1,12 @@
+@import "assets";
+.ErrorPage {
+  @include CenterAlign(column, center, center);
+  color: $text-color;
+  height: 50vh;
+  .error-404 {
+    font-size: 10rem;
+  }
+  .display-error {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,72 @@
+@import "assets";
+.CoinInfoPage {
+  margin-left: calc(70px + 2rem);
+
+  .crypto-summary {
+    @include CenterAlign(row, flex-start, space-around);
+    width: 100%;
+    img {
+      height: auto;
+      width: 30vw;
+    }
+    div:last-child {
+      padding: 1rem;
+      width: 60%;
+      font-size: 1.3rem;
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+}
+.crypto-community-urls {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 9rem 7rem;
+  span {
+    color: $primary-color;
+  }
+}
+.crypto-description {
+  padding: 2rem;
+  height: 13rem;
+  border: 3px solid $primary-color;
+  overflow: auto;
+  line-height: 1.8rem;
+  line-break: loose;
+  margin: 1rem;
+  & > div {
+    color: $primary-color;
+    font-size: 1.1rem;
+  }
+}
+.stripe-payment {
+  @include CenterAlign(column, center, center);
+  margin-bottom: 2rem;
+  & > div {
+    width: 40%;
+  }
+  & > button {
+    padding: 0.5rem;
+    border-radius: 999px;
+    border: none;
+    outline-style: none;
+    cursor: pointer;
+    margin-top: 0.3rem;
+    background: $primary-color;
+    color: #fff;
+  }
+}
+.payment-amount {
+  @include CenterAlign(row, center, center);
+  border: 3px solid $primary-color;
+  color: $text-color;
+  input {
+    font-size: 1rem;
+    color: $text-color;
+    border: none;
+    border-bottom: 2px solid $text-color;
+    outline-style: none;
+    padding-left: 1rem;
+  }
+}

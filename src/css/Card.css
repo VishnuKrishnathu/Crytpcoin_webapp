@@ -1,0 +1,23 @@
+#Card {
+  border-radius: 10px;
+  background-image: linear-gradient(#e6e6e6, #537d7d);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#Card img {
+  width: auto;
+  height: 10rem;
+  margin-top: 1.3rem;
+}
+#Card .coin_props {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+#Card .coin_props div {
+  padding: 0.2rem 0.5rem;
+}
+
+/*# sourceMappingURL=Card.css.map */

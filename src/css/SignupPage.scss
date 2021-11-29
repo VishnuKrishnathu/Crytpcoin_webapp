@@ -1,0 +1,66 @@
+@import "assets";
+.SignupPage {
+  height: 100vh;
+  position: relative;
+  .signup-credentials {
+    position: absolute;
+    border: 3px solid $primary-color;
+    padding: 0.9rem;
+    color: $text-color;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include CenterAlign(column, center, center);
+    div:first-child {
+      @include CenterAlign(row, center, center);
+    }
+    & > div {
+      @include CenterAlign(row, center, space-between);
+      margin: 1rem;
+      width: 100%;
+      & > div {
+        position: relative;
+        overflow: hidden;
+        input {
+          padding: 0.1rem;
+          outline-style: none;
+          border: none;
+          border-bottom: 3px solid rgba(128, 128, 128, 0.5);
+          color: $text-color;
+          font-size: 1rem;
+          &:focus + div {
+            transform: translateX(0%);
+          }
+        }
+        & > div {
+          position: absolute;
+          height: 3px;
+          background: $primary-color;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          transform: translateX(-110%);
+          transition: 0.2s;
+        }
+      }
+    }
+    & > button {
+      padding: 0.2rem;
+      outline-style: none;
+      border: none;
+      font-size: 1rem;
+      color: #fff;
+      transition: 0.2s;
+      cursor: pointer;
+      &:hover {
+        padding: 0.2rem 1rem;
+      }
+    }
+  }
+}
+#create-account--loading {
+  background: grey;
+}
+#create-account {
+  background: $primary-color;
+}

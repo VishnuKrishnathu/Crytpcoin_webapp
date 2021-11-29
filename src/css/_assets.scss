@@ -1,0 +1,9 @@
+$primary-color: #537d7d;
+$text-color: #365252;
+$wallet-icon-color: #e2e9e9;
+@mixin CenterAlign($flex-direction, $align-items, $justify-content) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}

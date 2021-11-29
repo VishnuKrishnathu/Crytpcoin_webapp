@@ -1,0 +1,77 @@
+.LoginPage {
+  position: relative;
+  height: 100vh;
+}
+.LoginPage > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.LoginPage .login-credentials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #537d7d;
+}
+.LoginPage .login-credentials > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+  color: #365252;
+}
+.LoginPage .login-credentials > div input {
+  padding: 0.2rem;
+  width: 100%;
+  color: #365252;
+  outline-style: none;
+  border: none;
+  font-size: 1rem;
+  border-bottom: 3px solid rgba(128, 128, 128, 0.5);
+}
+.LoginPage .login-credentials > button {
+  margin: 0.8rem;
+  border: none;
+  outline-style: none;
+  padding: 0.4rem;
+  color: #e2e9e9;
+  cursor: pointer;
+}
+.LoginPage .login-credentials > button:hover {
+  padding: 0.4rem 1rem;
+}
+.LoginPage .login-credentials div:last-child > a {
+  margin-left: 0.5rem;
+}
+
+.underline-box {
+  overflow: hidden;
+  margin-left: 1.2rem;
+  position: relative;
+  width: 14rem;
+}
+.underline-box input:focus + div {
+  transform: translateX(0%);
+}
+.underline-box .underline {
+  position: absolute;
+  height: 3px;
+  background: #537d7d;
+  bottom: 0%;
+  width: 14rem;
+  transform: translateX(-100%);
+  transition: 0.2s;
+}
+
+.loading-button {
+  background: grey;
+}
+
+.login-button {
+  background: #537d7d;
+}
+
+/*# sourceMappingURL=LoginPage.css.map */

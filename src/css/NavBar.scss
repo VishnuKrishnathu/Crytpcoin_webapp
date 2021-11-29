@@ -1,0 +1,40 @@
+@import "assets";
+.NavBar {
+  height: 10vh;
+  @include CenterAlign(row, center, space-around);
+  .searchbar {
+    position: relative;
+    width: 40%;
+    input {
+      width: 100%;
+      padding: 0.3rem 0.5rem;
+      border-radius: 999px;
+      color: $primary-color;
+      outline-style: none;
+      border: 3px solid $primary-color;
+    }
+    button {
+      background: none;
+      outline-style: none;
+      border: none;
+      position: absolute;
+      right: 2%;
+      top: 8%;
+      bottom: 8%;
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+}
+.user-wallet {
+  background: $primary-color;
+  padding: 0.5rem;
+  border-radius: 999px;
+  & > a {
+    @include CenterAlign(row, center, center);
+    text-decoration: none;
+    color: $wallet-icon-color;
+  }
+}

@@ -1,0 +1,71 @@
+@import "assets";
+#HomePage {
+  margin-left: calc(70px + 10rem);
+  margin-right: 10rem;
+  margin-top: 0.5rem;
+  div:first-child {
+    margin: 0.4rem;
+  }
+  .gallery {
+    height: 23rem;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    img {
+      opacity: 0.7;
+    }
+  }
+  #crypto_cards {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  .loader {
+    height: 5rem;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 5rem;
+      top: 0px;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      border-top: 10px solid $primary-color;
+      animation: spin 1s linear infinite;
+    }
+  }
+}
+.try-again {
+  @include CenterAlign(column, center, center);
+  & > div {
+    color: $text-color;
+  }
+  #try-again {
+    margin: 2rem;
+    padding: 0.2rem 1rem;
+    font-size: 1.1rem;
+    border-radius: 999px;
+    cursor: pointer;
+    outline-style: none;
+    border: none;
+    background: $primary-color;
+    color: #fff;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

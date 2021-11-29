@@ -1,0 +1,69 @@
+@import "assets";
+.LoginPage {
+  position: relative;
+  height: 100vh;
+  & > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .login-credentials {
+    @include CenterAlign(column, center, center);
+    border: 3px solid $primary-color;
+    & > div {
+      @include CenterAlign(row, center, space-between);
+      margin: 1rem;
+      color: $text-color;
+      input {
+        padding: 0.2rem;
+        width: 100%;
+        color: $text-color;
+        outline-style: none;
+        border: none;
+        font-size: 1rem;
+        border-bottom: 3px solid rgba(128, 128, 128, 0.5);
+      }
+    }
+    & > button {
+      margin: 0.8rem;
+      border: none;
+      outline-style: none;
+      padding: 0.4rem;
+      color: $wallet-icon-color;
+      cursor: pointer;
+      &:hover {
+        padding: 0.4rem 1rem;
+      }
+    }
+    div:last-child {
+      & > a {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+.underline-box {
+  overflow: hidden;
+  margin-left: 1.2rem;
+  position: relative;
+  width: 14rem;
+  input:focus + div {
+    transform: translateX(0%);
+  }
+  .underline {
+    position: absolute;
+    height: 3px;
+    background: $primary-color;
+    bottom: 0%;
+    width: 14rem;
+    transform: translateX(-100%);
+    transition: 0.2s;
+  }
+}
+.loading-button {
+  background: grey;
+}
+.login-button {
+  background: $primary-color;
+}

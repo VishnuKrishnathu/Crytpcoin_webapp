@@ -1,0 +1,76 @@
+#HomePage {
+  margin-left: calc(70px + 10rem);
+  margin-right: 10rem;
+  margin-top: 0.5rem;
+}
+#HomePage div:first-child {
+  margin: 0.4rem;
+}
+#HomePage .gallery {
+  height: 23rem;
+  border: none;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+#HomePage .gallery img {
+  opacity: 0.7;
+}
+#HomePage #crypto_cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+#HomePage #crypto_cards a {
+  text-decoration: none;
+  color: #000;
+}
+#HomePage .loader {
+  height: 5rem;
+  position: relative;
+}
+#HomePage .loader::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  top: 0px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border-top: 10px solid #537d7d;
+  animation: spin 1s linear infinite;
+}
+
+.try-again {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.try-again > div {
+  color: #365252;
+}
+.try-again #try-again {
+  margin: 2rem;
+  padding: 0.2rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  outline-style: none;
+  border: none;
+  background: #537d7d;
+  color: #fff;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=HomePage.css.map */
