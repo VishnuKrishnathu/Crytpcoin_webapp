@@ -2,7 +2,7 @@
   "name": "coinapp",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://VishnuKrishnathu.github.io/Crytpcoin_webapp",
+  "homepage":"http://VishnuKrishnathu.github.io/coinapp",
   "dependencies": {
     "@stripe/react-stripe-js": "^1.4.1",
     "@stripe/stripe-js": "^1.15.0",
